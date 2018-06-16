@@ -1,6 +1,8 @@
+import {combineReducers} from 'redux'
+import letterGuessedSoFar from './letterGuessedSoFar'
+import wordBeingGuessed from './wordBeingGuessed'
 
 
-
-export default (state = [], action = {}) => {
-  return state
-}
+export  default combineReducers({
+  letterGuessedSoFar,wordBeingGuessed
+})
