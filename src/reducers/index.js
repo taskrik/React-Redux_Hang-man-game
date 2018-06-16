@@ -1,8 +1,4 @@
 import {combineReducers} from 'redux'
-import letterGuessedSoFar from './letterGuessedSoFar'
-import wordBeingGuessed from './wordBeingGuessed'
+import game from './game'
 
-
-export  default combineReducers({
-  letterGuessedSoFar,wordBeingGuessed
-})
+export default combineReducers({game})
