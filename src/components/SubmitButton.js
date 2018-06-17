@@ -16,11 +16,11 @@ export class SubmitButton extends Component {
 
   }
     render() {
-      const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
+      const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
 
       return (
         <div>
-          {alphabet.map((letter, index) => <button key={letter} onClick={this.handleClick} value={letter}>{letter}</button>)}
+          {letters.map((letter) => <button key={letter} onClick={this.handleClick} value={letter}>{letter}</button>)}
         </div>
       );
     }

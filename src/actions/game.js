@@ -8,7 +8,7 @@ export const MAKE_GUESS = 'MAKE_GUESS'
 
 
 export function newGame(word , guesses) {
-  const newWord = randomWord().toString()
+  const newWord = randomWord()
   return {
 
     type: NEW_GAME,
